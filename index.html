@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets\style\css\main.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets\style\css\main.min.css" />
+    <link rel="shortcut icon" href="assets\logo.svg" type="image/x-icon" />
+    <title>GalleryArts</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <title>BA</title>
-</head>
-<body>
-    <h1>Welcome home!</h1>
-</body>
+    
+    
+  </head>
+  <style>
+    #home{
+      background-image: url(assets/style/css/home-art.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+  
+  <body>
+    <!-- navigation bar -->
+     <nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container">
+    <a class="navbar-brand pr-2" href="#home">
+      <img src="assets\logo.svg" alt="logo">
+    </a>
+    <button class="navbar-toggler bg-warning rounded-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            more
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#about-us">About us</a></li>
+            <li><a class="dropdown-item" href="#sponsorship">Sponsorship</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#contact-us">Contact us</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-4 rounded-4" type="search" placeholder="Find art..." aria-label="Search"/>
+        <button class="btn btn-outline-warning rounded-4" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Home section -->
+
+    <section id="home" class="min-vh-100">
+      <div class="position-absolute top-20 start-0 w-100 h-100 bg-primary opacity-50" ></div>
+      <div class="container vh-100 py-5">
+        <div class="container py-5">
+        <h1 class="display-1 fw-medium ">Stunning Arts Gallery</h1>
+        <h3 class="fs-2 text-light">Museum of Arts</h3> 
+        <h5 fw-3>Where creativity meets "Paint"</h5>
+        <p class="lead fw-medium fs-3 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sequi consequatur temporibus sit autem porro commodi incidunt eum, doloremque accusantium aperiam saepe totam natus quos facilis facere numquam sint repudiandae.</p>
+        <button type="submit" class="btn btn-lg btn-outline-warning mt-5 text-dark bg-warning">Contribute</button>
+      
+
+      </div>
+    </section>
+  </body>
 </html>
